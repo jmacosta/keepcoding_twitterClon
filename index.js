@@ -1,3 +1,8 @@
 import { tweetListController } from './tweetlist/tweetListController.js';
-const tweetList = document.getElementById('tweets');
-tweetListController(tweetList);
+
+const loadTweetsButton = document.getElementById('loadTweets');
+
+loadTweetsButton.addEventListener('click', () => {
+  const tweetList = document.getElementById('tweets');
+  tweetListController(tweetList);
+});
